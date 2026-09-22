@@ -1,0 +1,927 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anuroop Debeesh | CSE-AIML Student &amp; Software Developer</title>
+  <meta name="description" content="Portfolio of Anuroop Debeesh, a Computer Science Engineering student specializing in Artificial Intelligence &amp; Machine Learning, showcasing software, AI, database, and web development projects.">
+  <meta name="author" content="Anuroop Debeesh">
+  
+  <!-- Modern Typography Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <!-- Devicon Icons for Programming Languages & Tech Stack -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- html2pdf for direct ATS PDF export -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+
+  <!-- Stylesheet -->
+  <script type="module" crossorigin src="/assets/index-BVoDvG5K.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-DlWvFcPL.css">
+</head>
+<body>
+
+<!-- STICKY FLOATING NAVBAR -->
+<header class="site-header" id="site-header">
+  <div class="wrap">
+    <nav class="nav-bar">
+      <!-- Left: Brand / Name -->
+      <a href="#hero" class="nav-logo">
+        <span class="nav-brand-text">ANUROOP DEBEESH</span>
+      </a>
+
+      <!-- Center: Clean Navigation Links -->
+      <div class="nav-links">
+        <a href="#hero" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </div>
+
+      <!-- Right: Action Buttons -->
+      <div class="nav-actions">
+        <!-- Theme Toggle Button -->
+        <button class="btn-icon theme-btn" id="theme-toggle-btn" aria-label="Toggle Theme" title="Switch Theme">
+          <i data-lucide="moon"></i>
+        </button>
+
+        <!-- Resume Button -->
+        <button onclick="openResumeModal()" class="nav-resume-btn">
+          <span>Resume</span>
+          <i data-lucide="arrow-up-right" style="width: 13px; height: 13px;"></i>
+        </button>
+
+        <!-- Mobile Menu Toggle -->
+        <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Open Navigation Menu">
+          <i data-lucide="menu"></i>
+        </button>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<!-- MOBILE NAVIGATION DRAWER -->
+<div class="mobile-drawer-overlay" id="mobile-drawer-overlay"></div>
+<aside class="mobile-drawer" id="mobile-drawer">
+  <div>
+    <div class="mobile-drawer-top">
+      <span class="nav-logo">
+        <span class="nav-brand-text">ANUROOP DEBEESH</span>
+      </span>
+      <button class="btn-icon" id="mobile-drawer-close" aria-label="Close Menu">
+        <i data-lucide="x"></i>
+      </button>
+    </div>
+    <nav class="mobile-nav-list">
+      <a href="#hero" class="mobile-nav-item active"><i data-lucide="home"></i> Home</a>
+      <a href="#about" class="mobile-nav-item"><i data-lucide="user"></i> About</a>
+      <a href="#skills" class="mobile-nav-item"><i data-lucide="cpu"></i> Skills</a>
+      <a href="#projects" class="mobile-nav-item"><i data-lucide="folder-git-2"></i> Projects</a>
+      <a href="#education" class="mobile-nav-item"><i data-lucide="graduation-cap"></i> Education</a>
+      <a href="#contact" class="mobile-nav-item"><i data-lucide="mail"></i> Contact</a>
+    </nav>
+  </div>
+  <div style="display: flex; flex-direction: column; gap: 12px;">
+    <button onclick="openResumeModal()" class="btn btn-primary" style="width: 100%;">
+      Resume ↗
+    </button>
+    <div style="display: flex; gap: 16px; justify-content: center; font-size: 13px; color: var(--text-secondary);">
+      <a href="https://github.com/anuroopdeebesh" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://linkedin.com/in/anuroop-debeesh" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="mailto:anuroopdeebesh@gmail.com">Email</a>
+    </div>
+  </div>
+</aside>
+
+<main>
+  <!-- ========================================================================
+       HERO SECTION & PROFILE IMAGE SHOWCASE
+       ======================================================================== -->
+  <section class="hero-section" id="hero">
+    <div class="wrap">
+      <div class="hero-grid">
+        
+        <!-- Left Hero Content -->
+        <div class="hero-left reveal">
+          <div class="hero-status-pill">
+            <span class="status-pulse-dot"></span>
+            <span>Available for Internship &amp; Project Roles</span>
+          </div>
+          
+          <h1 class="hero-title">
+            Building practical software with <span class="gradient-text">AI, data, and code</span>.
+          </h1>
+
+          <p class="hero-supporting">
+            Third-year Computer Science Engineering student specializing in Artificial Intelligence &amp; Machine Learning, with hands-on experience developing database-driven applications, NLP pipelines, and full-stack software.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#projects" class="btn btn-primary">
+              <i data-lucide="layout-grid" style="width: 16px; height: 16px;"></i>
+              View Projects
+            </a>
+            <button onclick="openResumeModal()" class="btn btn-secondary">
+              <i data-lucide="file-text" style="width: 16px; height: 16px;"></i>
+              Download Resume
+            </button>
+          </div>
+
+          <div class="hero-socials">
+            <a href="https://github.com/anuroopdeebesh" target="_blank" rel="noopener" class="hero-social-link">
+              <i class="devicon-github-original"></i> GitHub ↗
+            </a>
+            <a href="https://linkedin.com/in/anuroop-debeesh" target="_blank" rel="noopener" class="hero-social-link">
+              <i class="devicon-linkedin-plain colored"></i> LinkedIn ↗
+            </a>
+            <a href="mailto:anuroopdeebesh@gmail.com" class="hero-social-link">
+              <i data-lucide="mail" style="width: 15px; height: 15px;"></i> Email ↗
+            </a>
+          </div>
+        </div>
+
+        <!-- Right Hero: Clean Profile Photo -->
+        <div class="hero-right reveal">
+          <div class="hero-profile-container">
+            <div class="profile-card-aura"></div>
+            
+            <div class="profile-image-card">
+              <div class="profile-img-viewport">
+                <img src="/assets/hero_avatar-CFvh1Ou-.jpg" alt="Anuroop Debeesh" class="hero-profile-img">
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       QUICK INTRO STRIP
+       ======================================================================== -->
+  <div class="intro-strip">
+    <div class="wrap">
+      <div class="intro-strip-grid">
+        <div class="strip-item">
+          <div class="strip-icon-wrap">
+            <i data-lucide="graduation-cap"></i>
+          </div>
+          <div>
+            <span class="strip-label">ACADEMIC STATUS</span>
+            <span class="strip-value">Third Year · CSE (AI &amp; ML)</span>
+          </div>
+        </div>
+        <div class="strip-item">
+          <div class="strip-icon-wrap">
+            <i data-lucide="building"></i>
+          </div>
+          <div>
+            <span class="strip-label">INSTITUTION</span>
+            <span class="strip-value">Gharda Institute of Technology</span>
+          </div>
+        </div>
+        <div class="strip-item">
+          <div class="strip-icon-wrap">
+            <i data-lucide="code-2"></i>
+          </div>
+          <div>
+            <span class="strip-label">CORE STACK</span>
+            <span class="strip-value">Python • Java • SQL • Flask</span>
+          </div>
+        </div>
+        <div class="strip-item">
+          <div class="strip-icon-wrap">
+            <i data-lucide="sparkles"></i>
+          </div>
+          <div>
+            <span class="strip-label">SPECIALIZATION</span>
+            <span class="strip-value">AI Models • Speech • Full-Stack</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       ABOUT SECTION
+       ======================================================================== -->
+  <section id="about">
+    <div class="wrap">
+      <div class="about-layout reveal">
+        <div class="about-body">
+          <div class="section-header" style="margin-bottom: 24px;">
+            <h2>About Me</h2>
+          </div>
+          <p>
+            I am a third-year Computer Science Engineering student specializing in <strong>Artificial Intelligence &amp; Machine Learning</strong> at Gharda Institute of Technology. I enjoy architecting practical software solutions that bridge software development, normalized database design, and modern machine learning techniques.
+          </p>
+          <p>
+            My work focuses on building robust systems, including an AI-powered spoken English assistant, a full-stack hospital management platform, and an intelligent resume analysis recruitment tool.
+          </p>
+
+          <!-- About Highlights Grid -->
+          <div class="about-cards-grid">
+            <div class="about-mini-card">
+              <div class="about-mini-icon"><i data-lucide="brain-circuit"></i></div>
+              <div class="about-mini-content">
+                <span class="about-mini-title">AI &amp; NLP Systems</span>
+                <span class="about-mini-desc">Speech recognition, entity extraction, and intelligent matching algorithms.</span>
+              </div>
+            </div>
+            <div class="about-mini-card">
+              <div class="about-mini-icon"><i data-lucide="database"></i></div>
+              <div class="about-mini-content">
+                <span class="about-mini-title">Relational Database Design</span>
+                <span class="about-mini-desc">Certified in DBMS, relational schema normalization, and SQL optimization.</span>
+              </div>
+            </div>
+            <div class="about-mini-card">
+              <div class="about-mini-icon"><i data-lucide="laptop"></i></div>
+              <div class="about-mini-content">
+                <span class="about-mini-title">Full-Stack Development</span>
+                <span class="about-mini-desc">Python, Flask, JavaScript, and responsive UI components.</span>
+              </div>
+            </div>
+          </div>
+
+          <p style="margin-top: 28px;">
+            <a href="#projects" class="text-link">
+              Explore my projects →
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       SKILLS SECTION (With Modern Interactive Tech Cards & Icons)
+       ======================================================================== -->
+  <section id="skills" style="border-top: 1px solid var(--border);">
+    <div class="wrap">
+      <div class="section-header reveal">
+        <span class="section-label">SKILLS &amp; TECHNOLOGIES</span>
+        <h2>Tools &amp; Languages I Work With</h2>
+        <p>A structured breakdown of programming languages, frameworks, databases, and intelligent system tools I leverage across projects.</p>
+      </div>
+
+      <div class="skills-category-container reveal">
+        
+        <!-- Category 1: Languages -->
+        <div class="skill-category-block">
+          <div class="skill-category-header">
+            <div class="category-icon-chip"><i data-lucide="code-2"></i></div>
+            <div>
+              <h3 class="skill-category-title">Programming Languages</h3>
+              <span class="skill-category-subtitle">Core languages used for algorithms, backends, and problem solving</span>
+            </div>
+          </div>
+
+          <div class="skill-cards-grid">
+            <!-- Python -->
+            <div class="skill-card">
+              <div class="skill-card-icon">
+                <i class="devicon-python-plain colored"></i>
+              </div>
+              <div class="skill-card-info">
+                <div class="skill-card-name">Python</div>
+                <div class="skill-card-sub">AI, NLP, Flask, Scripts</div>
+              </div>
+            </div>
+
+            <!-- Java -->
+            <div class="skill-card">
+              <div class="skill-card-icon">
+                <i class="devicon-java-plain colored"></i>
+              </div>
+              <div class="skill-card-info">
+                <div class="skill-card-name">Java</div>
+                <div class="skill-card-sub">OOP &amp; Software Design</div>
+              </div>
+            </div>
+
+            <!-- SQL -->
+            <div class="skill-card">
+              <div class="skill-card-icon">
+                <i class="devicon-azuresqldatabase-plain colored"></i>
+              </div>
+              <div class="skill-card-info">
+                <div class="skill-card-name">SQL</div>
+                <div class="skill-card-sub">Relational Queries &amp; DDL/DML</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Category 2: Frontend & Web Development -->
+        <div class="skill-category-block">
+          <div class="skill-category-header">
+            <div class="category-icon-chip"><i data-lucide="globe"></i></div>
+            <div>
+              <h3 class="skill-category-title">Frontend &amp; Web Development</h3>
+              <span class="skill-category-subtitle">Interfaces, styling, client scripting, and responsive applications</span>
+            </div>
+          </div>
+
+          <div class="skill-cards-grid">
+            <!-- HTML5 -->
+            <div class="skill-card">
+              <div class="skill-card-icon">
+                <i class="devicon-html5-plain colored"></i>
+              </div>
+              <div class="skill-card-info">
+                <div class="skill-card-name">HTML5</div>
+                <div class="skill-card-sub">Semantic Structure &amp; SEO</div>
+              </div>
+            </div>
+
+            <!-- CSS3 -->
+            <div class="skill-card">
+              <div class="skill-card-icon">
+                <i class="devicon-css3-plain colored"></i>
+              </div>
+              <div class="skill-card-info">
+                <div class="skill-card-name">CSS3</div>
+                <div class="skill-card-sub">Flexbox, Grid, Animations</div>
+              </div>
+            </div>
+
+            <!-- JavaScript -->
+            <div class="skill-card">
+              <div class="skill-card-info-top">
+                <div class="skill-card-icon">
+                  <i class="devicon-javascript-plain colored"></i>
+                </div>
+              </div>
+              <div class="skill-card-info">
+                <div class="skill-card-name">JavaScript</div>
+                <div class="skill-card-sub">DOM, Async/ES6+, Logic</div>
+              </div>
+            </div>
+
+            <!-- React -->
+            <div class="skill-card">
+              <div class="skill-card-icon">
+                <i class="devicon-react-original colored"></i>
+              </div>
+              <div class="skill-card-info">
+                <div class="skill-card-name">React</div>
+                <div class="skill-card-sub">Component-Driven UI</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Category 3: Databases & Storage -->
+        <div class="skill-category-block">
+          <div class="skill-category-header">
+            <div class="category-icon-chip"><i data-lucide="database"></i></div>
+            <div>
+              <h3 class="skill-category-title">Databases &amp; Storage</h3>
+              <span class="skill-category-subtitle">Relational data persistence, schema modeling, and transaction management</span>
+            </div>
+          </div>
+
+          <div class="skill-cards-grid">
+            <!-- MySQL -->
+            <div class="skill-card">
+              <div class="skill-card-icon">
+                <i class="devicon-mysql-plain colored"></i>
+              </div>
+              <div class="skill-card-info">
+                <div class="skill-card-name">MySQL</div>
+                <div class="skill-card-sub">RDBMS, Foreign Keys, Indexing</div>
+              </div>
+            </div>
+
+            <!-- SQLite -->
+            <div class="skill-card">
+              <div class="skill-card-icon">
+                <i class="devicon-sqlite-plain colored"></i>
+              </div>
+              <div class="skill-card-info">
+                <div class="skill-card-name">SQLite</div>
+                <div class="skill-card-sub">Embedded Relational Storage</div>
+              </div>
+            </div>
+
+            <!-- DBMS Concepts -->
+            <div class="skill-card">
+              <div class="skill-card-icon custom-tech-icon">
+                <i data-lucide="table-2"></i>
+              </div>
+              <div class="skill-card-info">
+                <div class="skill-card-name">Relational DBMS</div>
+                <div class="skill-card-sub">3NF Normalization &amp; ACID</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Category 4: AI & Machine Learning -->
+        <div class="skill-category-block">
+          <div class="skill-category-header">
+            <div class="category-icon-chip"><i data-lucide="cpu"></i></div>
+            <div>
+              <h3 class="skill-category-title">AI &amp; Machine Learning</h3>
+              <span class="skill-category-subtitle">Speech processing, intelligent text extraction, and model workflows</span>
+            </div>
+          </div>
+
+          <div class="skill-cards-grid">
+            <!-- AI -->
+            <div class="skill-card">
+              <div class="skill-card-icon custom-tech-icon">
+                <i data-lucide="brain"></i>
+              </div>
+              <div class="skill-card-info">
+                <div class="skill-card-name">Artificial Intelligence</div>
+                <div class="skill-card-sub">Rule-Based &amp; Intelligent Logic</div>
+              </div>
+            </div>
+
+            <!-- Machine Learning -->
+            <div class="skill-card">
+              <div class="skill-card-icon custom-tech-icon">
+                <i data-lucide="network"></i>
+              </div>
+              <div class="skill-card-info">
+                <div class="skill-card-name">Machine Learning</div>
+                <div class="skill-card-sub">Vectorization &amp; Similarity</div>
+              </div>
+            </div>
+
+            <!-- Speech Recognition -->
+            <div class="skill-card">
+              <div class="skill-card-icon custom-tech-icon">
+                <i data-lucide="mic"></i>
+              </div>
+              <div class="skill-card-info">
+                <div class="skill-card-name">Speech Recognition</div>
+                <div class="skill-card-sub">Audio Processing &amp; Transcripts</div>
+              </div>
+            </div>
+
+            <!-- NLP -->
+            <div class="skill-card">
+              <div class="skill-card-icon custom-tech-icon">
+                <i data-lucide="message-square-code"></i>
+              </div>
+              <div class="skill-card-info">
+                <div class="skill-card-name">NLP</div>
+                <div class="skill-card-sub">Tokenization &amp; Text Parsing</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Category 5: Developer Tools -->
+        <div class="skill-category-block">
+          <div class="skill-category-header">
+            <div class="category-icon-chip"><i data-lucide="wrench"></i></div>
+            <div>
+              <h3 class="skill-category-title">Developer Tools &amp; Environment</h3>
+              <span class="skill-category-subtitle">Version control, repository management, and coding workflows</span>
+            </div>
+          </div>
+
+          <div class="skill-cards-grid">
+            <!-- Git -->
+            <div class="skill-card">
+              <div class="skill-card-icon">
+                <i class="devicon-git-plain colored"></i>
+              </div>
+              <div class="skill-card-info">
+                <div class="skill-card-name">Git</div>
+                <div class="skill-card-sub">Version Control &amp; Branches</div>
+              </div>
+            </div>
+
+            <!-- GitHub -->
+            <div class="skill-card">
+              <div class="skill-card-icon">
+                <i class="devicon-github-original"></i>
+              </div>
+              <div class="skill-card-info">
+                <div class="skill-card-name">GitHub</div>
+                <div class="skill-card-sub">Collaboration &amp; Repositories</div>
+              </div>
+            </div>
+
+            <!-- VS Code -->
+            <div class="skill-card">
+              <div class="skill-card-icon">
+                <i class="devicon-vscode-plain colored"></i>
+              </div>
+              <div class="skill-card-info">
+                <div class="skill-card-name">VS Code</div>
+                <div class="skill-card-sub">IDE, Debugging, Extensions</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       PROJECTS SECTION (Selected Work in Sleek Compact Card Theme)
+       ======================================================================== -->
+  <section id="projects" style="border-top: 1px solid var(--border);">
+    <div class="wrap">
+      <div class="section-header reveal">
+        <span class="section-label">SELECTED WORK</span>
+        <h2>Featured Projects</h2>
+        <p>Engineered software combining AI, speech analysis, relational databases, and clean architecture.</p>
+      </div>
+
+      <!-- Modern Card-Based Project Theme Grid -->
+      <div class="projects-theme-grid reveal">
+        
+        <!-- PROJECT 01: ARTICULATE -->
+        <div class="project-theme-card">
+          <div class="project-theme-header">
+            <div class="project-badge-group">
+              <span class="project-number-badge">01</span>
+              <span class="project-category-chip"><i data-lucide="mic" style="width: 12px; height: 12px;"></i> AI • SPEECH</span>
+            </div>
+            <div class="project-status-tag">Featured</div>
+          </div>
+
+          <div class="project-theme-body">
+            <h3 class="project-theme-title">Articulate</h3>
+            <div class="project-theme-subtitle">AI-Powered Spoken English Assistant</div>
+            <p class="project-theme-desc">
+              Real-time speech analysis tool designed to help users evaluate pronunciation, pacing, and grammatical structure with personalized corrective feedback.
+            </p>
+
+            <div class="project-theme-highlights">
+              <div class="highlight-item">
+                <i data-lucide="check-circle-2"></i>
+                <span>Speech-to-text conversion &amp; real-time audio analysis</span>
+              </div>
+              <div class="highlight-item">
+                <i data-lucide="check-circle-2"></i>
+                <span>Grammar &amp; phonetic error highlighting</span>
+              </div>
+              <div class="highlight-item">
+                <i data-lucide="check-circle-2"></i>
+                <span>Interactive practice &amp; progress tracking</span>
+              </div>
+            </div>
+
+            <div class="project-theme-techstack">
+              <span class="tech-chip"><i class="devicon-python-plain colored"></i> Python</span>
+              <span class="tech-chip"><i data-lucide="mic" style="width: 12px; height: 12px;"></i> Speech Recognition</span>
+              <span class="tech-chip"><i data-lucide="cpu" style="width: 12px; height: 12px;"></i> NLP Logic</span>
+            </div>
+          </div>
+
+          <div class="project-theme-footer">
+            <button class="btn btn-primary btn-sm" onclick="openProjectModal('articulate')">
+              <i data-lucide="info" style="width: 14px; height: 14px;"></i>
+              View Details
+            </button>
+            <a href="https://github.com/anuroopdeebesh" target="_blank" rel="noopener" class="btn btn-secondary btn-sm">
+              <i class="devicon-github-original" style="font-size: 14px;"></i>
+              GitHub ↗
+            </a>
+          </div>
+        </div>
+
+        <!-- PROJECT 02: MEDI SMART -->
+        <div class="project-theme-card">
+          <div class="project-theme-header">
+            <div class="project-badge-group">
+              <span class="project-number-badge">02</span>
+              <span class="project-category-chip"><i data-lucide="database" style="width: 12px; height: 12px;"></i> WEB • DATABASE</span>
+            </div>
+            <div class="project-status-tag">Full-Stack</div>
+          </div>
+
+          <div class="project-theme-body">
+            <h3 class="project-theme-title">Medi Smart</h3>
+            <div class="project-theme-subtitle">Smart Hospital Management System</div>
+            <p class="project-theme-desc">
+              A centralized healthcare portal engineered for organizing patient records, appointment booking, physician schedules, and role-based permissions.
+            </p>
+
+            <div class="project-theme-highlights">
+              <div class="highlight-item">
+                <i data-lucide="check-circle-2"></i>
+                <span>Patient records &amp; clinical history triage</span>
+              </div>
+              <div class="highlight-item">
+                <i data-lucide="check-circle-2"></i>
+                <span>Doctor schedule management &amp; collision prevention</span>
+              </div>
+              <div class="highlight-item">
+                <i data-lucide="check-circle-2"></i>
+                <span>Normalized 3NF relational MySQL database</span>
+              </div>
+            </div>
+
+            <div class="project-theme-techstack">
+              <span class="tech-chip"><i class="devicon-python-plain colored"></i> Python</span>
+              <span class="tech-chip"><i class="devicon-flask-original"></i> Flask</span>
+              <span class="tech-chip"><i class="devicon-mysql-plain colored"></i> MySQL</span>
+            </div>
+          </div>
+
+          <div class="project-theme-footer">
+            <button class="btn btn-primary btn-sm" onclick="openProjectModal('medismart')">
+              <i data-lucide="info" style="width: 14px; height: 14px;"></i>
+              View Details
+            </button>
+            <a href="https://github.com/anuroopdeebesh" target="_blank" rel="noopener" class="btn btn-secondary btn-sm">
+              <i class="devicon-github-original" style="font-size: 14px;"></i>
+              GitHub ↗
+            </a>
+          </div>
+        </div>
+
+        <!-- PROJECT 03: AI RECRUITMENT SYSTEM -->
+        <div class="project-theme-card">
+          <div class="project-theme-header">
+            <div class="project-badge-group">
+              <span class="project-number-badge">03</span>
+              <span class="project-category-chip"><i data-lucide="brain-circuit" style="width: 12px; height: 12px;"></i> AI • NLP</span>
+            </div>
+            <div class="project-status-tag">NLP Engine</div>
+          </div>
+
+          <div class="project-theme-body">
+            <h3 class="project-theme-title">AI Recruitment System</h3>
+            <div class="project-theme-subtitle">Resume Analysis &amp; Job Match Platform</div>
+            <p class="project-theme-desc">
+              Automated talent screening tool that extracts entities from applicant resumes, calculates similarity match scores against job postings, and detects skill gaps.
+            </p>
+
+            <div class="project-theme-highlights">
+              <div class="highlight-item">
+                <i data-lucide="check-circle-2"></i>
+                <span>Resume document entity extraction &amp; tokenization</span>
+              </div>
+              <div class="highlight-item">
+                <i data-lucide="check-circle-2"></i>
+                <span>Cosine text similarity scoring for candidate fit</span>
+              </div>
+              <div class="highlight-item">
+                <i data-lucide="check-circle-2"></i>
+                <span>Automated skill-gap recommendations</span>
+              </div>
+            </div>
+
+            <div class="project-theme-techstack">
+              <span class="tech-chip"><i class="devicon-python-plain colored"></i> Python</span>
+              <span class="tech-chip"><i data-lucide="message-square-code" style="width: 12px; height: 12px;"></i> NLP</span>
+              <span class="tech-chip"><i class="devicon-flask-original"></i> Flask</span>
+            </div>
+          </div>
+
+          <div class="project-theme-footer">
+            <button class="btn btn-primary btn-sm" onclick="openProjectModal('recruitment')">
+              <i data-lucide="info" style="width: 14px; height: 14px;"></i>
+              View Details
+            </button>
+            <a href="https://github.com/anuroopdeebesh" target="_blank" rel="noopener" class="btn btn-secondary btn-sm">
+              <i class="devicon-github-original" style="font-size: 14px;"></i>
+              GitHub ↗
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       17 & 18 — EDUCATION & CERTIFICATION
+       ======================================================================== -->
+  <section id="education" style="border-top: 1px solid var(--border);">
+    <div class="wrap">
+      <div class="edu-cert-grid">
+        
+        <!-- Education Column -->
+        <div class="reveal">
+          <div class="section-header" style="margin-bottom: 32px;">
+            <span class="section-label">ACADEMIC TIMELINE</span>
+            <h2>Education</h2>
+          </div>
+
+          <div class="timeline-list">
+            <!-- Degree -->
+            <div class="timeline-node">
+              <div class="timeline-dot"></div>
+              <div class="timeline-date">2026 — Present</div>
+              <div class="timeline-role">Bachelor of Engineering</div>
+              <div class="timeline-org">Computer Science Engineering — Artificial Intelligence &amp; Machine Learning</div>
+              <div class="timeline-meta">Gharda Institute of Technology · Currently in Third Year</div>
+            </div>
+
+            <!-- 12th Standard -->
+            <div class="timeline-node">
+              <div class="timeline-dot"></div>
+              <div class="timeline-date">HSC</div>
+              <div class="timeline-role">12th Standard</div>
+              <div class="timeline-org">Higher Secondary Certificate</div>
+              <span class="score-tag">Score: 79%</span>
+            </div>
+
+            <!-- 10th Standard -->
+            <div class="timeline-node">
+              <div class="timeline-dot"></div>
+              <div class="timeline-date">SSC</div>
+              <div class="timeline-role">10th Standard</div>
+              <div class="timeline-org">Secondary School Certificate</div>
+              <span class="score-tag">Score: 90%</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Certification Column -->
+        <div class="reveal">
+          <div class="section-header" style="margin-bottom: 32px;">
+            <span class="section-label">CREDENTIALS</span>
+            <h2>Certification</h2>
+          </div>
+
+          <div class="cert-card-single">
+            <div class="cert-card-header">
+              <div class="cert-icon-wrap">
+                <i data-lucide="award"></i>
+              </div>
+              <div>
+                <h3 class="cert-card-title">Database Management System (DBMS)</h3>
+                <div class="cert-issuer-text">SEED Infotech Ltd., Pune</div>
+              </div>
+            </div>
+            <div style="font-size: 12.5px; color: var(--text-dim);">
+              In association with Gharda Institute of Technology
+            </div>
+            <p class="cert-body-text">
+              Formal verification in Relational Database Management Systems (RDBMS), SQL query design, database normalization, relational schema design, and transaction management.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       19 — RESUME CTA SECTION
+       ======================================================================== -->
+  <section id="resume-cta" style="padding: 48px 0;">
+    <div class="wrap">
+      <div class="resume-banner reveal">
+        <div class="resume-banner-text">
+          <h2>Interested in what I build?</h2>
+          <p>Take a closer look at my skills, projects, and academic background.</p>
+        </div>
+        <button onclick="openResumeModal()" class="resume-banner-btn">
+          <span>View Resume</span>
+          <i data-lucide="arrow-up-right" style="width: 16px; height: 16px;"></i>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       20 — CONTACT SECTION
+       ======================================================================== -->
+  <section id="contact" style="border-top: 1px solid var(--border);">
+    <div class="wrap">
+      <div class="section-header reveal">
+        <span class="section-label">CONTACT</span>
+        <h2>Let's connect.</h2>
+        <p>I'm open to internship and entry-level opportunities in Software Development and Artificial Intelligence / Machine Learning.</p>
+      </div>
+
+      <div class="contact-layout reveal">
+        
+        <!-- Contact Links / Info -->
+        <div>
+          <div class="contact-info-list">
+            <!-- Email -->
+            <a href="mailto:anuroopdeebesh@gmail.com" class="contact-info-item">
+              <i data-lucide="mail" class="contact-icon"></i>
+              <div>
+                <div class="contact-info-label">EMAIL</div>
+                <div class="contact-info-val">anuroopdeebesh@gmail.com</div>
+              </div>
+            </a>
+
+            <!-- Phone -->
+            <a href="tel:+918208824026" class="contact-info-item">
+              <i data-lucide="phone" class="contact-icon"></i>
+              <div>
+                <div class="contact-info-label">PHONE</div>
+                <div class="contact-info-val">+91 8208824026</div>
+              </div>
+            </a>
+
+            <!-- GitHub -->
+            <a href="https://github.com/anuroopdeebesh" target="_blank" rel="noopener" class="contact-info-item">
+              <i data-lucide="github" class="contact-icon"></i>
+              <div>
+                <div class="contact-info-label">GITHUB</div>
+                <div class="contact-info-val">github.com/anuroopdeebesh</div>
+              </div>
+            </a>
+
+            <!-- LinkedIn -->
+            <a href="https://linkedin.com/in/anuroop-debeesh" target="_blank" rel="noopener" class="contact-info-item">
+              <i data-lucide="linkedin" class="contact-icon"></i>
+              <div>
+                <div class="contact-info-label">LINKEDIN</div>
+                <div class="contact-info-val">linkedin.com/in/anuroop-debeesh</div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- Minimal Contact Form -->
+        <div class="contact-form-card">
+          <form id="contact-form" onsubmit="handleContactSubmit(event)">
+            <div class="form-field">
+              <label for="contact-name" class="form-label">Name</label>
+              <input type="text" id="contact-name" class="form-control" placeholder="Your Name" required>
+            </div>
+
+            <div class="form-field">
+              <label for="contact-email" class="form-label">Email</label>
+              <input type="email" id="contact-email" class="form-control" placeholder="your@email.com" required>
+            </div>
+
+            <div class="form-field">
+              <label for="contact-message" class="form-label">Message</label>
+              <textarea id="contact-message" class="form-control" placeholder="How can I help you?" required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%;">
+              Send Message
+            </button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- ========================================================================
+     21 — FOOTER
+     ======================================================================== -->
+<footer>
+  <div class="wrap footer-inner">
+    <div class="footer-top">
+      <div>
+        <div class="footer-brand">ANUROOP DEBEESH</div>
+        <div class="footer-subtitle">CSE-AIML • SOFTWARE • AI</div>
+      </div>
+      <div class="footer-links">
+        <a href="https://github.com/anuroopdeebesh" target="_blank" rel="noopener" class="footer-link">GitHub ↗</a>
+        <a href="https://linkedin.com/in/anuroop-debeesh" target="_blank" rel="noopener" class="footer-link">LinkedIn ↗</a>
+        <a href="mailto:anuroopdeebesh@gmail.com" class="footer-link">Email ↗</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © 2026 Anuroop Debeesh. All rights reserved.
+    </div>
+  </div>
+</footer>
+
+<!-- PROJECT & RESUME DETAIL MODAL -->
+<div class="modal-overlay" id="project-modal" aria-hidden="true">
+  <div class="modal-container">
+    <button class="modal-close-btn" onclick="closeProjectModal()" aria-label="Close dialog">
+      <i data-lucide="x" style="width: 16px; height: 16px;"></i>
+    </button>
+    <div id="modal-content">
+      <!-- Injected via JavaScript -->
+    </div>
+  </div>
+</div>
+
+<!-- TOAST CONTAINER -->
+<div class="toast-container" id="toast-container"></div>
+
+<!-- JavaScript Logic -->
+<script>
+  if (window.lucide) {
+    window.lucide.createIcons();
+  }
+</script>
+</body>
+</html>

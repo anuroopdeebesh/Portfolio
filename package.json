@@ -1,0 +1,28 @@
+{
+  "name": "anuroop-debeesh-portfolio",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Portfolio of Anuroop Debeesh — CSE-AIML Student & Software Developer",
+  "scripts": {
+    "dev": "vite --open",
+    "start": "vite --open",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "keywords": [
+    "portfolio",
+    "computer-science",
+    "ai-ml",
+    "python",
+    "java",
+    "sql",
+    "flask",
+    "speech-recognition",
+    "nlp"
+  ],
+  "author": "Anuroop Debeesh",
+  "license": "MIT",
+  "devDependencies": {
+    "vite": "^5.4.1"
+  }
+}
